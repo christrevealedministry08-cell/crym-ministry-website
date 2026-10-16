@@ -1,0 +1,10 @@
+{
+  "name": "Christ Revealed Youth Ministries",
+  "short_name": "CRYM",
+  "description": "Revealing the Person of Jesus Christ through Scriptures.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7f4ed",
+  "theme_color": "#0b1730",
+  "icons": []
+}

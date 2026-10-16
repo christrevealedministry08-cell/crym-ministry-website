@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1730">
+  <meta name="description" content="Christ Revealed Youth Ministries — Revealing the Person of Jesus Christ through Scriptures.">
+  <title>Christ Revealed | CRYM</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img class="brand-logo" src="crym-logo.jpg" alt="CRYM Youth Ministries logo">
+      <div><strong>CHRIST REVEALED</strong><small>Youth Ministries</small></div>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+  </header>
+
+  <nav id="nav" class="nav">
+    <button class="nav-item active" data-page="home">Home</button>
+    <button class="nav-item" data-page="bible">Bible</button>
+    <button class="nav-item" data-page="devotions">Devotions</button>
+    <button class="nav-item" data-page="sermons">Sermons</button>
+    <button class="nav-item" data-page="programs">Programs</button>
+    <button class="nav-item" data-page="about">About CRYM</button>
+  </nav>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-overlay">
+        <span class="eyebrow">CHRIST REVEALED YOUTH MINISTRIES</span>
+        <h1>SPEAK JESUS CHRIST</h1>
+        <p>Revealing the Person of Jesus Christ through Scriptures.</p>
+        <button class="gold-btn" data-go="devotions">Read today's devotion</button>
+      </div>
+    </section>
+
+    <section id="page-home" class="page visible">
+      <div class="section-heading"><div><span class="eyebrow">GROW IN THE WORD</span><h2>Welcome to CRYM</h2></div></div>
+      <div class="cards">
+        <article class="card feature-card"><span class="card-icon">📖</span><h3>Scripture for Today</h3><p>“I am the way, the truth, and the life: no man cometh unto the Father, but by me.”</p><strong>John 14:6 · KJV</strong></article>
+        <article class="card"><span class="card-icon">🌅</span><h3>Daily Devotion</h3><p>Grow in the knowledge of Jesus Christ through Scripture-centered teaching.</p><button class="text-btn" data-go="devotions">Explore devotions →</button></article>
+        <article class="card"><span class="card-icon">🗓️</span><h3>Ministry Programs</h3><p>Find fellowship meetings, online programs and ministry announcements.</p><button class="text-btn" data-go="programs">View programs →</button></article>
+      </div>
+      <p class="offline-note" id="offlineStatus">Checking offline availability…</p>
+    </section>
+
+    <section id="page-bible" class="page">
+      <div class="section-heading"><div><span class="eyebrow">THE WORD OF GOD</span><h2>Bible Reading</h2></div></div>
+      <div class="card">
+        <p>This starter version includes a sample KJV verse. NIV text can be added through an authorized source or licence.</p>
+        <div class="version-tabs"><button class="version active" data-version="KJV">KJV</button><button class="version" data-version="NIV">NIV</button></div>
+        <h3 id="verseTitle">John 14:6</h3>
+        <p id="verseText" class="verse">“Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me.”</p>
+        <small id="verseCredit">King James Version (public domain in many jurisdictions; verify local requirements).</small>
+        <p id="nivNotice" class="notice hidden">NIV selected. To display the full NIV text, connect an authorized Bible API or provide licensed text. This app does not reproduce unlicensed NIV content.</p>
+      </div>
+    </section>
+
+    <section id="page-devotions" class="page">
+      <div class="section-heading"><div><span class="eyebrow">CHRIST-CENTRED TEACHING</span><h2>Devotions</h2></div></div>
+      <article class="card devotion">
+        <span class="pill">FEATURED DEVOTION</span><h3>The Foundation of the Gospel</h3>
+        <strong>Matthew 16:18</strong>
+        <p>The gospel reveals Jesus Christ as the foundation of our faith. As we read Scripture, let us continually turn our attention to His person, His finished work, and the life revealed through Him.</p>
+        <p class="reflection"><b>Reflection:</b> How does your understanding of Jesus shape the way you read the Scriptures today?</p>
+        <small>Christ Revealed Youth Ministries · SPEAK JESUS CHRIST</small>
+      </article>
+      <article class="card devotion">
+        <span class="pill">DAILY GROWTH</span><h3>Trusted Truth</h3>
+        <strong>John 14:6</strong>
+        <p>Jesus declares Himself to be the way, the truth, and the life. Christian faith is centred on knowing Him and allowing His word to guide our lives.</p>
+      </article>
+    </section>
+
+    <section id="page-sermons" class="page">
+      <div class="section-heading"><div><span class="eyebrow">LISTEN & LEARN</span><h2>Sermons & Teachings</h2></div></div>
+      <div class="card"><h3>Teaching library</h3><p>Audio and video teachings will appear here when ministry media is added.</p><div class="empty-state">🎙️<br>Media library coming soon</div></div>
+    </section>
+
+    <section id="page-programs" class="page">
+      <div class="section-heading"><div><span class="eyebrow">FELLOWSHIP & COMMUNITY</span><h2>Ministry Programs</h2></div></div>
+      <div class="card"><h3>Christ Revealed Wednesday Fellowship</h3><p>Online fellowship for Scripture sharing, prayer, testimonies and teaching.</p><p><b>Venue:</b> Online — WhatsApp voice chat</p><p><b>Schedule:</b> Check the latest ministry announcement for the current time.</p></div>
+      <div class="card"><h3>Announcements</h3><p>Upcoming programs and event details will be added here by approved ministry leaders once online publishing is connected.</p></div>
+    </section>
+
+    <section id="page-about" class="page">
+      <div class="section-heading"><div><span class="eyebrow">OUR VISION</span><h2>About CRYM</h2></div></div>
+      <div class="card"><h3>Christ Revealed Youth Ministries</h3><p class="verse">“Revealing the Person of Jesus Christ through Scriptures.”</p><p>CRYM exists to point people to Jesus Christ through the teaching of Scripture, fellowship, prayer and the sharing of the gospel.</p><p><b>Ministry theme:</b> SPEAK JESUS CHRIST</p><p><b>Ministry signature:</b> Pro. Basule Isaac</p></div>
+    </section>
+
+    <section class="admin-callout">
+      <h3>Ministry content team</h3>
+      <p>Admin and approved leaders can manage published content in a later connected version. This starter is a front-end demonstration; it does not yet have secure accounts or online publishing.</p>
+    </section>
+  </main>
+
+  <footer><strong>CHRIST REVEALED</strong><p>Revealing the Person of Jesus Christ through Scriptures.</p><small>© CRYM · SPEAK JESUS CHRIST</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
