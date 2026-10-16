@@ -1,22 +1,23 @@
 {
-  "id": "./",
+  "id": "/crym-ministry-website/",
   "name": "Christ Revealed Youth Ministries",
   "short_name": "CRYM",
   "description": "Revealing the Person of Jesus Christ through Scriptures.",
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/crym-ministry-website/",
+  "scope": "/crym-ministry-website/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#176b3a",
   "icons": [
     {
-      "src": "./icon-192.png",
+      "src": "/crym-ministry-website/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "./icon-512.png",
+      "src": "/crym-ministry-website/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
