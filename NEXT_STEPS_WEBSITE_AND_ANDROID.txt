@@ -1,0 +1,38 @@
+CRYM APP — WEBSITE + ANDROID APP PLAN
+
+Your choice: C — both a website for computers and an installable Android app.
+
+CURRENT STARTER
+- index.html, styles.css, app.js, manifest.json, service-worker.js
+- crym-logo.jpg
+This is a responsive Progressive Web App starter. It is not yet a production service or an APK.
+
+PART 1: PUT THE WEBSITE ONLINE (FREE HOSTING OPTIONS MAY BE AVAILABLE)
+1. Extract CRYM_App_Starter_With_Logo.zip on a computer.
+2. Create a new static site project with a hosting provider that supports HTTPS.
+3. Upload the contents of the CRYM_App_Starter folder (the files themselves, not only the ZIP).
+4. Publish the site and open its HTTPS address on your phone and computer.
+5. Test Home, Bible, Devotions, Sermons, Programs and About.
+6. On Android Chrome, open the site menu and choose “Install app” or “Add to Home screen” if offered.
+Note: Hosting-provider interfaces and free-plan limits may change.
+
+PART 2: MAKE A CONVENTIONAL ANDROID APK
+The current project can be packaged using a web-to-Android wrapper, such as Capacitor, or rebuilt in an Android project. This requires a computer and Android build tooling or a compatible cloud build service.
+A common Capacitor workflow for a developer:
+- Install Node.js and Android Studio.
+- Put the web files into a web asset folder.
+- Initialize Capacitor and configure the Android app ID and app name.
+- Add the Android platform.
+- Open the Android project in Android Studio.
+- Build a signed APK for testing or an AAB for Google Play.
+The exact steps depend on the final app structure and the build environment. Do not install an APK from unknown websites.
+
+BEFORE PUBLIC LAUNCH
+- Add secure authentication for the administrator and approved leaders.
+- Connect a database with access rules; do not rely on a hidden button as security.
+- Add proper licensed/authorized Bible API integration for NIV and KJV text.
+- Add a privacy policy and moderation process for prayer requests and user-submitted content.
+- Test accessibility, offline caching, audio/video playback and backup/recovery.
+
+CURRENT LIMITATION
+The demo's “admin/approved leaders” note is explanatory only. There are no real accounts or server-side permissions yet.
