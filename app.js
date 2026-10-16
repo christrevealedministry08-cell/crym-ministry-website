@@ -28,3 +28,34 @@ if(navigator.onLine){status.textContent='You are online. Core pages are designed
 else{status.textContent='You are offline. Cached app pages and saved content may still be available.';}
 window.addEventListener('online',()=>status.textContent='You are online.'); 
 window.addEventListener('offline',()=>status.textContent='You are offline. Cached pages may still be available.');
+async function shareDevotion(button) {
+  const card = button.closest('.devotion');
+
+  if (!card) return;
+
+  const title = card.querySelector('h3')?.innerText || 'CRYM Devotion';
+  const content = card.innerText.replace('Share This Devotion', '').trim();
+
+  const shareData = {
+    title: title,
+    text: content + '\n\nChrist Revealed Youth Ministries\nSPEAK JESUS CHRIST',
+    url: window.location.href
+  };
+
+  try {
+    if (navigator.share) {
+      await navigator.share(shareData);
+    } else if (navigator.clipboard) {
+      await navigator.clipboard.writeText(
+        shareData.text + '\n\n' + shareData.url
+      );
+      alert('Devotion copied. You can now share it with others.');
+    } else {
+      alert('Please copy the devotion text and share it manually.');
+    }
+  } catch (error) {
+    if (error.name !== 'AbortError') {
+      alert('Sharing was unsuccessful. Please try again.');
+    }
+  }
+}
